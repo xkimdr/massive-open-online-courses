@@ -1,0 +1,42 @@
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/info
+
+###
+GET http://localhost:3001/api/persons/67855997e743f27c4bc142b8a
+
+###
+
+DELETE http://localhost:3001/api/persons/67893e18963d179b263e8a18
+
+###
+
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Qwerty",
+    "number": "12-443-4343"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/678930cdba934d8b41ad55f1
+content-type: application/json
+
+{
+    "name": "Qwerty",
+    "number": "12-443-43"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "a": "1",
+    "b": "2"
+}
